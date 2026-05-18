@@ -1,0 +1,139 @@
+/* home.css */
+
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--navbar-height, 80px) + 2rem) 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--brand-bg) 0%, #f2f1e9 100%);
+}
+
+/* The decorative glow in the background */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  width: 65vw;
+  height: 65vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(188, 108, 37, 0.08) 0%, transparent 70%);
+  top: -10%;
+  right: -10%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.content-wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 700;
+  /* clamp makes the text responsive: smaller on mobile, larger on desktop */
+  font-size: clamp(2.8rem, 8vw, 5rem);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  color: var(--brand-heading);
+  letter-spacing: -0.02em;
+}
+
+.hero-copy {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: var(--brand-text);
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* Added a Call to Action button style for the Home section */
+.hero-cta-group {
+  display: inline-flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 18px 40px rgba(45, 79, 29, 0.12);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 22px 48px rgba(45, 79, 29, 0.18);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--brand-heading);
+  border: 1px solid rgba(45, 79, 29, 0.12);
+}
+
+.btn-secondary:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(45, 79, 29, 0.08);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 120px 1.5rem 4rem;
+  }
+  
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Utility classes */
+.section-spacing {
+  padding: 4rem 1.5rem;
+}
+
+.center-text {
+  text-align: center;
+}

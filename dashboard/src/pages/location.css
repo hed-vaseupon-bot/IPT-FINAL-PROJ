@@ -1,0 +1,210 @@
+.location-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.location-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.location-sub {
+  color: #b36b22; /* Matches your Admin Portal brand color accent */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+}
+
+.location-title {
+  font-size: 2.8rem;
+  margin: 10px 0 15px 0;
+  color: #1a331e; /* Earthy deep green matching your logo circle */
+}
+
+.location-lead {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Layout Grid */
+.location-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+/* Details Card */
+.location-details-card {
+  background: #faf8f5;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.detail-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #1a331e;
+}
+
+.detail-icon {
+  color: #b36b22;
+}
+
+.detail-text {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  border-bottom: 1px dashed #e5e0d8;
+  padding-bottom: 4px;
+}
+
+/* Map Wrapper */
+.map-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+  min-height: 400px;
+  background: #eee;
+}
+
+/* Map embed replacement styles */
+.map-embed-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  margin-top: 8px;
+}
+
+.location-map-image {
+  display: block;
+  width: 100%;
+  height: 350px; /* matches previous iframe height */
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .location-map-image {
+    height: 240px;
+  }
+}
+
+/* Gallery Section */
+.store-gallery-section {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 60px;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  color: #1a331e;
+  margin-bottom: 5px;
+}
+
+.gallery-subtitle {
+  color: #777;
+  margin-bottom: 35px;
+}
+
+.store-gallery-grid {
+  display: flex;
+  gap: 25px;
+}
+
+.store-img-card {
+  flex: 1;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  height: 450px;
+}
+
+.store-img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.store-img-card:hover img {
+  transform: scale(1.04);
+}
+
+.store-img-placeholder {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #f4f1ec 0%, #e5dfcf 100%);
+}
+
+.placeholder-copy {
+  color: #4d4a42;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  padding: 25px;
+  text-align: left;
+}
+
+.img-overlay span {
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Responsive Rules */
+@media (max-width: 900px) {
+  .location-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .store-gallery-grid {
+    flex-direction: column;
+  }
+  .store-img-card {
+    height: 350px;
+  }
+}

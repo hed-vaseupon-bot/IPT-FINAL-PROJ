@@ -1,0 +1,84 @@
+/* about.css */
+
+#about.about-section {
+  min-height: calc(100vh - var(--navbar-height, 80px));
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--navbar-height, 80px) + 3rem) 2rem 4rem;
+  background-color: #f9f8f3;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  scroll-margin-top: calc(var(--navbar-height, 80px) + 1rem);
+}
+
+.about-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 650px;
+  text-align: left;
+}
+
+.section-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #BC6C25; /* Your brand-accent */
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-style: italic;
+  font-weight: 700;
+  color: #2D2D1E; /* Your brand-heading */
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #3D3D29;
+  margin-bottom: 1.5rem;
+}
+
+.about-subtext {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(61, 61, 41, 0.7);
+}
+
+/* Optional: Add this if you want to add an image later to balance the side */
+.about-image-placeholder {
+  flex: 1;
+  height: 500px;
+  background: #E5E5DB;
+  border-radius: 40px;
+}
+
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .about-content {
+    text-align: center;
+  }
+}

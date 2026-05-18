@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "name": "Vizcaya Admin",
+      "displayName": "Vizcaya Admin",
+      "email": "cantobox@gmail.com",
+      "password": "cantobox"
+    }
+  ]
+}
