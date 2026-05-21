@@ -12,11 +12,10 @@
 }
 
 .login-card {
-  /* Added relative positioning as required by your later styles */
   position: relative; 
   background: white;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for contrast */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); 
   padding: 40px;
   width: 100%;
   max-width: 400px;
@@ -27,7 +26,7 @@
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(206, 196, 196, 0.05);
 }
 
 .location-map-iframe {
@@ -42,7 +41,7 @@
 }
 
 .login-subtitle {
-  color: #666;
+  color: #070707;
   margin-bottom: 32px;
   font-size: 14px;
 }
@@ -60,7 +59,7 @@
   display: block;
   margin-bottom: 8px;
   font-weight: 500;
-  color: #333;
+  color: #000000;
   font-size: 14px;
 }
 
@@ -120,7 +119,7 @@
 }
 
 .login-button:hover:not(:disabled) {
-  background-color: #1ca89d;
+  background-color: #f1f1f1;
 }
 
 .login-button:disabled {

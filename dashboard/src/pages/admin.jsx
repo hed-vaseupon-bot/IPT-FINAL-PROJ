@@ -97,6 +97,17 @@ function AdminDashboard() {
     if (!name.trim()) temp.name = "Dish name is required";
     if (!price || price <= 0) temp.price = "Enter a valid price";
     if (!category) temp.category = "Select a category";
+    
+    // Check for duplicate dish name when adding new dish
+    if (!editingId) {
+      const duplicateDish = menuItems.find(item => 
+        item.name.toLowerCase().trim() === name.toLowerCase().trim()
+      );
+      if (duplicateDish) {
+        temp.name = "A dish with this name already exists";
+      }
+    }
+    
     setErrors(temp);
     return Object.keys(temp).length === 0;
   };
