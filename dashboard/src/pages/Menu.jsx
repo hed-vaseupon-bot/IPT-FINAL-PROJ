@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios'; 
-import { ChefHat, RefreshCw, X } from 'lucide-react'; // Added X icon for modal close
+import { ChefHat, RefreshCw, X } from 'lucide-react'; 
 import { MENU_CATEGORIES } from '../constants';
 import { formatPrice } from '../lib/utils';
 import './menu.css';
