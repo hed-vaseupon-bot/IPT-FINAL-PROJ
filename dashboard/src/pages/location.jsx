@@ -2,7 +2,6 @@ import React from 'react';
 import { MapPin, Clock, Phone } from 'lucide-react';
 import './location.css';
 
-// Import the images directly from your assets folder structure
 import storeFrontImg from '../assets/location.jpg';
 import mascotSignImg from '../assets/location2.jpg';
 
@@ -15,7 +14,6 @@ export default function Location() {
         <p className="location-lead">Drop by for fresh flavors, traditionally prepared with a modern vision.</p>
       </div>
 
-      {/* Centered details block with Google Map embedded below */}
       <div className="location-single-container">
         <div className="location-details-card">
           <div className="detail-section">
@@ -47,7 +45,6 @@ export default function Location() {
              </div>
           </div>
 
-          {/* Embedded Google Map */}
           <div className="map-embed-container">
             <p>
               <iframe
@@ -66,7 +63,6 @@ export default function Location() {
         </div>
       </div>
 
-      {/* Bottom Section: Actual Storefront Gallery Images */}
       <div className="store-gallery-section">
         <h2 className="gallery-title">Spot the White Signboard</h2>
         <p className="gallery-subtitle">Look out for our signature curly-haired mascot cloud sign!</p>

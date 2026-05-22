@@ -150,10 +150,3 @@
   gap: 1rem;
   z-index: 40;
 }
-
-/* Navbar specific responsiveness */
-@media (max-width: 768px) {
-  .desktop-nav { display: none; }
-  .mobile-menu-toggle { display: flex; }
-  .mobile-menu { display: flex; }
-}

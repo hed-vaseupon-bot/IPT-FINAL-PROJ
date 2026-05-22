@@ -10,7 +10,6 @@ export default function Menu() {
   const [menuItems, setMenuItems] = useState([]);
   const [loading, setLoading] = useState(true);
   
-  // NEW: State to track which menu item is currently open in the modal
   const [selectedItem, setSelectedItem] = useState(null);
 
   const fetchMenu = async () => {
@@ -69,7 +68,6 @@ export default function Menu() {
         ) : (
           <div className="menu-item-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '20px' }}>
             {filteredItems.map((item) => (
-              /* UPDATED: Added onClick handler to item card to set state */
               <div 
                 key={item._id || item.id} 
                 className="menu-item-card" 

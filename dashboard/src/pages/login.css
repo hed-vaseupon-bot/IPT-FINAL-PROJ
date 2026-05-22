@@ -160,15 +160,3 @@
   color: #1b431c; /* Matches your dark green branding on hover */
   transform: scale(1.1);
 }
-
-/* Responsive design */
-@media (max-width: 480px) {
-  .login-card {
-    padding: 24px;
-    margin: 0 16px;
-  }
-
-  .login-title {
-    font-size: 20px;
-  }
-}

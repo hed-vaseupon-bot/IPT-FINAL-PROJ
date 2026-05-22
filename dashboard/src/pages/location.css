@@ -195,16 +195,3 @@
   font-weight: 500;
   font-size: 1.1rem;
 }
-
-/* Responsive Rules */
-@media (max-width: 900px) {
-  .location-grid-container {
-    grid-template-columns: 1fr;
-  }
-  .store-gallery-grid {
-    flex-direction: column;
-  }
-  .store-img-card {
-    height: 350px;
-  }
-}

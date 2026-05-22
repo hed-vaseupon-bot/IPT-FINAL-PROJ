@@ -49,7 +49,6 @@ const Sidebar = ({ activeSection, onLogout }) => {
   );
 };
 
-// --- MAIN ADMIN DASHBOARD ---
 function AdminDashboard() {
   // --- STATE ---
   const [name, setName] = useState('');
@@ -112,7 +111,6 @@ function AdminDashboard() {
     return Object.keys(temp).length === 0;
   };
 
-  // --- SAVE / UPDATE ---
   const handleSave = async () => {
     if (!validate()) return;
 
@@ -160,7 +158,6 @@ function AdminDashboard() {
     }
   };
 
-  // --- DELETE LOGIC ---
   const handleDeleteConfirm = async () => {
     try {
       await axios.delete(`http://localhost:1337/api/menu/${itemToDelete._id}`);
@@ -187,7 +184,6 @@ function AdminDashboard() {
     setErrors({}); setShowModal(false); setAvailable(true);
   };
 
-  // Updated layout mapping strings to sync headers
   const sectionLabels = {
     inventory: { tag: 'Menu Management', title: 'Kitchen Inventory' },
     menu: { tag: 'Menu.jsx', title: 'Seasonal Offerings' },
@@ -271,7 +267,6 @@ function AdminDashboard() {
         {activeSection === 'about' && <About />}
         {activeSection === 'contact' && <Contact />}
 
-        {/* Add/Edit Modal */}
         {activeSection === 'inventory' && showModal && (
           <div className="modal-overlay active">
             <div className="modal-dialog">
@@ -367,7 +362,6 @@ function AdminDashboard() {
         )}
       </main>
 
-      {/* Delete Dialog */}
       <Dialog open={deleteDialogOpen} onClose={() => setDeleteDialogOpen(false)}>
         <DialogTitle>Confirm Delete</DialogTitle>
         <DialogContent>

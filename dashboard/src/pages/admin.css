@@ -272,7 +272,6 @@ body {
   font-size: 0.9rem;
   line-height: 1.5;
   color: var(--brand-muted);
-  /* Truncates excessive text to maintain neat card shapes */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -285,7 +284,7 @@ body {
   align-items: center;
   border-top: 1px solid var(--brand-border);
   background: #faf9f5;
-  margin-top: auto; /* Pushes the actions section down uniformly */
+  margin-top: auto; 
 }
 
 .menu-card-price {
@@ -294,7 +293,6 @@ body {
   color: var(--brand-heading);
 }
 
-/* --- Action Controls --- */
 .action-buttons {
   display: flex;
   gap: 0.4rem;
@@ -316,7 +314,6 @@ body {
 .delete-button { color: #dc2626; }
 .icon-button:hover { background: #eadecc; }
 
-/* --- Modals & Overlays --- */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -451,11 +448,3 @@ body {
   transition: transform 0.2s;
 }
 .toggle-switch.active .toggle-thumb { transform: translateX(1.25rem); }
-
-/* --- Responsive Adaptability --- */
-@media (max-width: 1024px) {
-  .admin-root { flex-direction: column; }
-  .admin-sidebar { width: 100%; min-height: auto; position: relative; }
-  .admin-main { margin-left: 0; padding: 1.5rem; }
-  .form-grid { grid-template-columns: 1fr; }
-}

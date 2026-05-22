@@ -13,7 +13,6 @@
   box-sizing: border-box;
 }
 
-/* Soft glow backing */
 .contact-blob {
   position: absolute;
   width: 500px;
@@ -91,7 +90,6 @@
   opacity: 0.95;
 }
 
-/* ============ INTERACTIVE LINK ============ */
 .contact-link {
   display: inline-block;
   font-family: var(--font-sans), sans-serif;
@@ -110,7 +108,6 @@
   transform: translateY(-1px);
 }
 
-/* ============ COPYRIGHT BAR ============ */
 .footer-bottom {
   margin-top: 6rem;
   width: 100%;
@@ -122,8 +119,6 @@
   box-sizing: border-box;
 }
 
-/* Inject a uniform spacer across all core layout section viewports */
-
 .copyright-text {
   font-family: var(--font-sans), sans-serif;
   font-size: 0.75rem;
@@ -132,24 +127,4 @@
   letter-spacing: 0.15em;
   color: var(--brand-muted);
   opacity: 0.75;
-}
-
-/* ============ MOBILE RESPONSIVENESS ============ */
-@media (max-width: 768px) {
-  .contact-footer {
-    /* Increased mobile top padding slightly from 5rem to 7rem */
-    padding: 7rem 1.5rem 2rem;
-  }
-  
-  .contact-title {
-    font-size: 2.2rem;
-  }
-
-  .contact-description {
-    font-size: 1rem;
-  }
-  
-  .footer-bottom {
-    margin-top: 4rem;
-  }
 }

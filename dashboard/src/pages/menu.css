@@ -362,11 +362,3 @@
 .menu-modal-close:hover {
   transform: scale(1.05);
 }
-
-/* ============ RESPONSIVE LAYOUTS ============ */
-@media (max-width: 1200px) { .menu-item-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 900px) { .menu-item-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { 
-  .menu-item-grid { grid-template-columns: 1fr; }
-  .menu-section .content-wrapper { padding: calc(var(--navbar-height, 80px) + 1.5rem) 1rem 3rem; }
-}

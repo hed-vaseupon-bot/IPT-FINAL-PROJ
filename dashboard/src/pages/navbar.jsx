@@ -27,7 +27,6 @@ export default function Navbar({ isAuthenticated }) {
     }
   }, [isAdminPath, isLoginPath]);
 
-  // Hide navbar completely on login and admin pages
   if (isLoginPath || isAdminPath) return null;
 
   const navLinks = [
