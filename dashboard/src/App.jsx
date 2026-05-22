@@ -7,7 +7,6 @@ import AdminDashboard from "./pages/admin";
 import Navbar from "./pages/navbar";
 
 function App() {
-  // Check if user data exists in localStorage
   const isAuthenticated = !!localStorage.getItem("token");
 
   return (
